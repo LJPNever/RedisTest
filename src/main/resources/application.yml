@@ -1,0 +1,46 @@
+
+
+spring:
+    redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
+      jedis:
+        pool:
+          max-active: 8
+          max-wait: -1
+          max-idle: 8
+          min-idle: 0
+
+
+
+
+    datasource:
+        url: jdbc:mysql://localhost:3306/redis?useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: 597169477
+    http:
+      encoding:
+        charset: utf-8
+        force-request: true
+        enabled: true
+        force: true
+        force-response: true
+
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: redis.Model
+
+
+server:
+  address: 0.0.0.0
+  port: 8080
+
+
+
+
+
+
+
+
